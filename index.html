@@ -186,7 +186,7 @@
           <h3>Photo Editor <i class="fa fa-image"></i></h3>
         </div>
 
-        <div class="row">
+        <div class="row rangeBox">
           <div class="col-4" id="image-input-box">
             <div class="mb-3">
               <label for="formFileSm" class="form-label">Open Image</label>
@@ -208,7 +208,6 @@
               <br />
 
               <div class="btn-group" role="group">
-
                 <div class="col">
                   <button
                     type="button"
@@ -223,7 +222,6 @@
                     Cancel
                   </button>
                 </div>
-
               </div>
             </div>
           </div>
@@ -297,6 +295,13 @@
               id="hue_range"
             />
 
+            <!-- <label for="customRange1" class="form-label">
+                        Opacity - <label id="opacity_range_counter">0</label> %    
+                    </label>
+                    <input type="range" min="0" max="100" value="0" class="form-range" id="opacity_range"> -->
+          </div>
+
+          <div class="col-3" id="imageOperationBox2">
             <label for="customRange1" class="form-label">
               Gray Scale - <label id="grayscale_range_counter">0</label> %
             </label>
@@ -308,14 +313,6 @@
               class="form-range"
               id="grayscale_range"
             />
-
-            <!-- <label for="customRange1" class="form-label">
-                        Opacity - <label id="opacity_range_counter">0</label> %    
-                    </label>
-                    <input type="range" min="0" max="100" value="0" class="form-range" id="opacity_range"> -->
-          </div>
-
-          <div class="col-3" id="imageOperationBox2">
             <label for="customRange1" class="form-label">
               Invert - <label id="invert_range_counter">0</label> %
             </label>
@@ -405,6 +402,7 @@
               class="btn btn-success mt-2 w-100 text-center"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
+              id="downloadBtn"
             >
               Download
             </button>
