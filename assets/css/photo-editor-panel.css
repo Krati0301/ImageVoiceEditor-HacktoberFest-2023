@@ -1,27 +1,94 @@
-#confirm-image-box{
-    display: none;
+#confirm-image-box {
+  display: none;
 }
 
-html{
-    height:100%;
+html {
+  height: 100%;
 }
 
-body , #photo-editor-panel .row{
-    height:85%;
+body,
+#photo-editor-panel .row {
+  height: 85%;
 }
 
-.custom-main-box{
-    height:100% !important;
+.custom-main-box {
+  height: 100% !important;
 }
 #photo-editor-panel {
-    height: 100%;
+  height: 100%;
 }
-#Imagecanvas{
-    height:100%;
-    width: 100%;
-    display: none;
+#Imagecanvas {
+  height: 100%;
+  width: 100%;
+  display: none;
 }
 
-#imageOperationBox , #imageOperationBox2{
-    display: none;
+#imageOperationBox,
+#imageOperationBox2 {
+  display: none;
+}
+#imageOperationBox2 {
+  margin-top: 1.8rem;
+  margin-left: 1.5rem;
+}
+#canvasBox {
+  width: 44.666667%;
+}
+.btn-group {
+  width: 17.5rem;
+  height: 3rem;
+  > button {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 848px) {
+  .rangeBox {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  #imageOperationBox,
+  #imageOperationBox2 {
+    width: 75%;
+  }
+  #canvasBox {
+    width: 100%;
+    height: 100%;
+    margin-left: 5rem;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  #downloadBtn {
+    width: 28% !important;
+    position: absolute;
+    right: 0.2rem;
+  }
+  .btn-group {
+    width: 16.5rem;
+    > button {
+      padding: 0 !important;
+      font-size: 0.9rem;
+    }
+  }
+}
+@media screen and (max-width: 1040px) {
+  .btn-group {
+    width: 14.5rem;
+    > button {
+      padding: 0.5rem !important;
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 456px) {
+  #downloadBtn {
+    width: 20% !important;
+    font-size: 10px;
+  }
+  .btn-group {
+    width: 10.5rem;
+  }
 }
